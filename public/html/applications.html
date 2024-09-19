@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../css/ModalWindows.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Заявки</title>
+</head>
+
+<body>
+    <div class="modalBackground">
+        <div class="modalActive">
+            <div class="modalClose">
+                <img src="/images/closeImage.jpg" />
+            </div>
+            <div class="modalWindow">
+                <div class="container mt-4 w-100">
+                    <h2>Выберите общежитие</h2>
+                    <select id="dormitory-select" class="form-select">
+                    </select>
+                    <button id="confirm-settlement" class="btn btn-success mt-2">Подтвердить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main-header></main-header>
+    <section class="container mt-3">
+        <select id="reject-dormitory" class="form-select mb-2 mt-2" style="display: inline-block; width: auto;">
+        </select>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Имя</th>
+                    <th scope="col">Фамилия</th>
+                    <th scope="col">Возраст</th>
+                    <th scope="col">Дата подачи</th>
+                    <th scope="col">Статус</th>
+                    <th scope="col">Общежитие</th>
+                </tr>
+            </thead>
+            <tbody id="dormitory-table-body">
+
+            </tbody>
+        </table>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="/js/ModalWindows.js"></script>
+    <script src="/js/applications.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/GenerateHTMLCode.js"></script>
+</body>
+
+</html>
